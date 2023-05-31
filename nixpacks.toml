@@ -1,0 +1,4 @@
+providers = ["...", "python"]
+
+[phases.build]
+cmds = ['pip install -r requirements.txt']
