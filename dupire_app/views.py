@@ -5,8 +5,6 @@ import os
 from pathlib import Path
 from django.template import loader
 
-import pandas
-
 
 def home(request):
 
