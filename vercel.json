@@ -1,11 +1,13 @@
 
 {
 
-"builds": [ {"src": "django_quant/wsgi.py",
-             "use": "@natanffs/vercel-python-wsgi"}],
+"builds": [{"src": "django_quant/wsgi.py",
+             "use": "@ardnt/vercel-python-wsgi",
+             "config": { "maxLambdaSize": "15mb", "runtime": "@vercel/python" }
+           }],
 
 "routes": [{"src": "/(.*)",
-            "dest": "django_quant/wsgi.py",
-            "config": { "maxLambdaSize": "15mb", "runtime": "@vercel/python" }] 
+            "dest": "cores/wsgi.py"
+            }] 
 
 }
