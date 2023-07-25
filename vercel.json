@@ -5,7 +5,7 @@
              "use": "@natanffs/vercel-python-wsgi"}],
 
 "routes": [{"src": "/(.*)",
-            "dest": "django_quant/wsgi.py"},
-            "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }] 
+            "dest": "django_quant/wsgi.py",
+            "config": { "maxLambdaSize": "15mb", "runtime": "@vercel/python" }] 
 
 }
