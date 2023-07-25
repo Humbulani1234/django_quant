@@ -4,7 +4,7 @@
 "builds": [
            {"src": "django_quant/wsgi.py",
              "use": "@vercel/python",
-             "config": { "maxLambdaSize": "15mb", "runtime": "@vercel/python" }
+             "config": { "maxLambdaSize": "15mb", "runtime": "python" }
            }
           ],
 

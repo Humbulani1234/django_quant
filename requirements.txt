@@ -5,4 +5,3 @@ django-crispy-forms
 django-widget-tweaks
 gevent
 gunicorn
-python==3.9.0
