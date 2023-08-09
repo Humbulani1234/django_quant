@@ -1,4 +1,5 @@
 {% load bootstrap5 %}
+{%  load static %}
 
 <html>
 
@@ -7,96 +8,25 @@
 		<link rel="shortcut icon" href="#">
 		<meta name="viewpoint" content="width=device-width, initial-scale=0.1">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+        <link rel="stylesheet" type="text/css" href="{% static 'style_quant.css' %}">
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	</head>
-
-	<style>
-
-		.center-link {
-			display: block;
-			text-align: center;
-		             }
-
-		.centered {
-		    position: absolute;
-		    top: 50%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
-		          }
-
-		.left {
-		    position: fixed;
-		    top: 50%;
-		    left: 40%;
-		    transform: translate(-50%, -40%);
-		       }
-
-		.right {
-		    position: fixed;
-		    top: 48.8%;
-		    right: 30%;
-		    transform: translate(-50%, -30%);
-		        }
-
-		 .containerd {
-			display: flex;
-			justify-content: center;
-		    align-items: center;
-		    height: 100vh;
-	                 }
-
-		  .box {
-		    flex: 1;
-		    display: inline-block;
-		    justify-content: center;
-	         align-items: center;
-		       }
-
-		  .box1 {
-			   height: 50vh;
-			   background-color: red;
-		        }
-
-		  .mybtn {
-			   background-color: whitesmoke;
-			   text-align: center;
-			   display: inline-block;
-			   font-size: 15px;
-			   cursor: pointer;
-			      }
-		   footer { 
-		   	       background-color: #fff;
-		   	       height:50px;
-
-		          }
-
-	</style>
              
 	<body style="background-color:skyblue;">
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <div class="nav-shadow"> -->
+
+		<nav class=" nav-shadow navbar navbar-expand-lg navbar-light bg-light">
 
 		  <a class="navbar-brand" href="#">Home</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> 
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-		    <ul class="navbar-nav nav navbar-nav navbar-logo mr-auto">
-		      <!-- <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Something else here</a>
-		        </div>
-
-		      </li> -->
-		    </ul>
+		    <ul class="navbar-nav nav navbar-nav navbar-logo mr-auto"></ul>
 
 		    <form class="form-inline my-2 my-lg-0">
 		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -106,6 +36,7 @@
 		  </div>
 
 		</nav> 
+       <!-- </div> -->
 
 		<div class="containerd">
 
@@ -115,12 +46,12 @@
 						<h3 class="center-link">Choose a Model</h3>
 				    </div>
 
-				    <span class="center-link"><a href="https://humbulani1234-quant-streamlit-deployment-ur9ulz.streamlit.app/" target="_self" title="Visit Streamlit"><button class="mybtn">Streamlit quant</button></a></span>
+				    <span class="center-link"><a href="https://humbulani1234-quant-streamlit-deployment-ur9ulz.streamlit.app/" target="_self" title="Visit Streamlit"><button class="mybtn">Streamlit quant app</button></a></span>
 				    <legend></legend> 
+                    <span class="center-link"><a href="https://gitfront.io/r/Humbulani/6addcf4feb37f8fa6449fee2bfa0a068d3afd09a/THE-HESTON-MODEL/" target="_self" title="Visit Heston"><button class="mybtn">Heston Model</button></a></span>
+                    <legend></legend> 
 					<span class="center-link"><a href="https://gitfront.io/r/Humbulani/3c90e850f896442a6ad9acb249f125e8a8d3c38f/Stochastic-Volatility-Implied/" target="_self" title="Visit Logistic"><button class="mybtn">SVI</button></a></span>
-					<legend></legend> 
-					<!-- <span class="center-link"><a href="https://djangoanyway-production-d043.up.railway.app/Decision" target="_blank" title="Visit Decision"><button class="mybtn">Enter Decision Tree</button></a></span>
-					<legend></legend> -->
+                    
 			</div>
 
 			<div class="box">
@@ -128,12 +59,11 @@
 					<div style="color:blue;">
 						<h4 class="center-link">GitHub Repos</h4>
 				    </div>
-
-					<!-- <span class="center-link"><a href="https://github.com/Humbulani1234/Django_Anyway/" target="_blank" title="Visit Logistic"><button class="mybtn">Enter Credit PD repository</button></a></span>
-					<legend></legend> -->
 					<span class="center-link"><a href="https://github.com/Humbulani1234/quant_streamlit/" target="_self" title="Visit Decision"><button class="mybtn">Streamlit quant repo</button></a></span>
 					<legend></legend>
-					<span class="center-link"><a href="https://gitfront.io/r/Humbulani/21772ff35fd550f95e800f6a616cd08ba6b9183b/Real-Analysis-and-Measure-theory/" target="_self" title="Visit Streamlit"><button class="mybtn">Real analysis</button></a></span>
+					<span class="center-link"><a href="https://gitfront.io/r/Humbulani/21772ff35fd550f95e800f6a616cd08ba6b9183b/Real-Analysis-and-Measure-theory/" target="_self" title="Visit Real Analysis"><button class="mybtn">Real analysis</button></a></span>
+                    <legend></legend>
+                    <span class="center-link"><a href="https://github.com/Humbulani1234/Cplusplus" target="_self" title="Visit C++"><button class="mybtn">C++</button></a></span>
 
 			</div>
 

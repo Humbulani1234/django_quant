@@ -1,0 +1,174 @@
+
+.center-link {
+
+    display: block;
+    text-align: center;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 100px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+
+ }
+
+.topics {
+
+    display: flex;
+    justify-content: center;
+ }
+
+.topic {
+
+    padding: 5px;
+    border-right: 2px solid #333;
+    margin: 100%;
+    font-size: 25;
+    background-color: blue;
+    color: green;
+ }
+
+.containerd {
+
+    display: flex;
+    justify-content: inline-block;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.contained {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0.8, 0.6, 0.4, 1);
+  background-color: white;
+  border:0.1px white;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+/*  animation: slideIn 1s ease-in-out;*/
+
+}
+
+.animation {
+
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+
+    0% {
+
+        transform: translate(-100%);
+    }
+
+    100% {
+
+        transform: translate(0);
+    }
+}
+
+
+.hole-content {
+       
+   background-color: aliceblue;
+   width: 100%;
+   border:1px solid #000;
+   height: 100%;
+   border-radius: 10px;
+}
+
+
+
+
+.box {
+
+    flex: 1;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+
+    height: 50vh;
+    background-color: red;
+ }
+
+.mybtn {
+
+   background-color: whitesmoke;
+   text-align: center;
+   display: inline-block;
+   font-size: 15px;
+   cursor: pointer;
+   padding: 3px 5px;
+   border:2px solid #000;
+   border-radius: 30px;
+   text-decoration: none;
+   color: #000;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+   font-weight: bold;
+   transition: box-shadow 0.3s ease;
+}
+
+.mybtn:hover {
+     background-color: #d0d0d0;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.mybtn1 {
+
+   background-color: whitesmoke;
+   text-align: center;
+   display: inline-block;
+   font-size: 15px;
+   cursor: pointer;
+   padding: 2px 2px;
+   border:2px solid #000;
+   border-radius: 20px;
+   text-decoration: none;
+   color: #000;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   font-weight: bold;
+   transition: box-shadow 0.3s ease;
+   margin-top: 5px;
+}
+
+.mybtn1:hover {
+
+     background-color: #d0d0d0;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.goback {
+
+    background-color:lightgreen; 
+    font-size:10px;
+    border-radius: 20px;
+}
+
+footer {
+
+      background-color: #fff;
+      height: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+
+}
+
+.nav-shadow {
+
+      background-color: #fff;
+      height: 60px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+ }
+
+
